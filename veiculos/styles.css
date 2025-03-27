@@ -195,6 +195,19 @@ main{
     transform: translate(-5px);
 }
 
+h1 a {
+    text-decoration: none;  /* Remove o sublinhado */
+    color: #ffffff;  /* Define uma cor para o link */
+    font-weight: bold; /* Deixa o texto mais forte */
+    font-size: 24px; /* Ajusta o tamanho da fonte */
+}
+
+h1 a:hover {
+    color: #007BFF; /* Muda a cor ao passar o mouse */
+}
+
+
+
 .section-title{
     text-align: center;
     margin-top: 4rem;
