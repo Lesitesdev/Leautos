@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/produtos/carro1.css">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<div class="navbar">
+    <div class="header-inner-content">
+        <h1 class="logo">Le<span>Autos</span></h1>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Produtos</li>
+                <li>Sobre</li>
+                <li>Contatos</li>
+                
+            </ul>
+        </nav>
+        <div class="nav-icon-container">
+            
+            <!-- Alterei a ordem da imagem para ser mais lógico para a interação -->
+            <img src="/imagens/menu.png" class="menu-button" alt="Menu">
+        </div>
+    </div>
+</div>
+
+
+
+<section class="home">
+    <div class="home-img">
+        <img src="/imagens/carros (1).jpg" class="one">
+    </div><!--home-img-->
+
+    <div class="home-text">
+
+        <h1>Vortex X1 <br>  2.0 Turbo, 300cv</h1>
+        <h5>Ano:2025/2025</h5>
+        <h5>KM:20km</h5>
+        <h3>$199.000,00</h3>
+        <a href="#" class="btn">Mais informações</a>
+        
+    </div><!--home-text-->
+</section><!--home-->
+
+
+<div class="main">
+    <div class="row">
+        
+        <li><img src="/imagens/carros (1).jpg" onclick="slider('/imagens/carros (1).jpg')">
+        </li>
+    </div><!--row-->
+
+    <div class="row2">
+        <li><img src="/imagens/carros (9).jpg" onclick="slider('/imagens/carros (9).jpg')">
+        </li>
+    </div><!--row2-->
+
+    <div class="row3">
+        <li><img src="/imagens/carros (3).jpg" onclick="slider('/imagens/carros (3).jpg')">
+        </li>
+    </div><!--row3-->
+    
+    <div class="row3">
+        <li><img src="/imagens/carros (4).jpg" onclick="slider('/imagens/carros (4).jpg')">
+        </li>
+    </div><!--row3-->
+    
+    <div class="row3">
+        <li><img src="/imagens/carros (5).jpg" onclick="slider('/imagens/carros (5).jpg')">
+        </li>
+    </div><!--row3-->
+</div><!--main-->
+
+
+
+<div class="SECAO">
+    <div class="descricao-produto">
+        <h2>Sobre o carro</h2>
+        <p>Consumo: 14 km/l na cidade, 18 km/l na estrada</p>
+        <ul>
+            <li>Tecnologia: Sistema de entretenimento com tela sensível ao toque de 10 polegadas, conectividade Bluetooth, e assistente de voz.</li>
+            <li>Segurança: 8 airbags, câmeras 360º, controle de tração e estabilidade, sensores de colisão frontal e traseira.</li>
+            <li>Design: Faróis de LED, rodas de alumínio de 18 polegadas, acabamento interno em couro e madeira.</li>
+            <li>Conforto: Banco do motorista com ajuste elétrico e aquecimento, ar-condicionado automático de duas zonas.</li>
+        </ul>
+        <a href="#" class="btn">Saiba Mais</a>
+    </div><!--descricao-produto-->
+</div><!--SECAO-->
+
+
+<footer class="gray-background">
+
+    <div class="page-inner-content footer-content">
+        <div class="download-options">
+
+            <p>Compre com confiança, dirija com orgulho.</p>
+            <p>Escolha LeAutos, escolha o melhor para você.</p>
+        <div>
+       
+        </div>
+
+    </div>
+
+
+    <div class="logo-footer">
+
+        <h1 class="logo">Le <Span>Autos</Span></h1>
+        <p>Seu próximo carro está te esperando na LeAutos.</p>
+
+
+    </div>
+
+
+    <div class="links-footer">
+        <h3>Links uteis</h3>
+        <ul>
+            <li>Inicio</li>
+            <li>Produtos</li>
+            <li>Sobre</li>
+            <li>Contatos</li>
+        </ul>
+    </div>
+    </div>
+
+    <hr class="page-inner-content"/>
+    <div class="page-inner-content copyright">
+        <p>Copyright 2025 - Lesites -  Todos direitos Reservados</p>
+    </div>
+</footer>
+
+
+
+
+
+<script>
+    function slider(anything) {
+        let img = document.querySelector('.one');
+        if (img) {
+            img.src = anything;
+        } else {
+            console.error("Elemento com a classe 'one' não encontrado!");
+        }
+    }
+
+    let menu = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+
+    if (menu && navbar) {
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        }
+    }
+</script>
